@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="restEval">
+		<class>com.restEval.entity.MCity</class>
+		<class>com.restEval.entity.MItem</class>
+		<class>com.restEval.entity.MProvince</class>
+		<class>com.restEval.entity.MSupplier</class>
+		<class>com.restEval.entity.TPo</class>
+		<class>com.restEval.entity.TPoDetail</class>
+		<class>com.restEval.entity.TPoDetailPK</class>
+	</persistence-unit>
+</persistence>
