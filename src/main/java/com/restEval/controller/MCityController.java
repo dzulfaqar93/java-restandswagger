@@ -47,46 +47,46 @@ public class MCityController {
 //		// http://localhost:8081/bootcamp06/customer/all
 //	}
 	
-	@ApiOperation(value = "Add City Data")
-	@RequestMapping(value = "/add", method = RequestMethod.POST)
-	public RestResponse addCity(@RequestBody MCityDto dto) {
-		RestResponse response = new RestResponse();
-		if (dto.getCityId() == null) {
-			response.setStatus(2);
-			response.setMessage("id City Tidak Ada!, Silahkan Coba Lagi yaa!");
-		} else {
-			response.setStatus(1);
-			svc.save(dto);
-			response.setMessage("Data berhasil ditambahkan!");
-		}
-		return response;
-	}
+	// @ApiOperation(value = "Add City Data")
+	// @RequestMapping(value = "/add", method = RequestMethod.POST)
+	// public RestResponse addCity(@RequestBody MCityDto dto) {
+	// 	RestResponse response = new RestResponse();
+	// 	if (dto.getCityId() == null) {
+	// 		response.setStatus(2);
+	// 		response.setMessage("id City Tidak Ada!, Silahkan Coba Lagi yaa!");
+	// 	} else {
+	// 		response.setStatus(1);
+	// 		svc.save(dto);
+	// 		response.setMessage("Data berhasil ditambahkan!");
+	// 	}
+	// 	return response;
+	// }
 	
-	@ApiOperation(value = "Update City Data")
-	@RequestMapping(value = "/update", method = RequestMethod.PUT)
-	public RestResponse updateCity(@RequestBody MCityDto dto) {
-		RestResponse response = new RestResponse();
-		if (dto.getCityId() == null) {
-			response.setStatus(2);
-			response.setMessage("id City Tidak Ada!, Silahkan Coba Lagi yaa!");
-		} else {
-			response.setStatus(1);
-			svc.update(dto);
-			response.setMessage("Data berhasil ditambahkan!");
-		}
-		return response;
-	}
+	// @ApiOperation(value = "Update City Data")
+	// @RequestMapping(value = "/update", method = RequestMethod.PUT)
+	// public RestResponse updateCity(@RequestBody MCityDto dto) {
+	// 	RestResponse response = new RestResponse();
+	// 	if (dto.getCityId() == null) {
+	// 		response.setStatus(2);
+	// 		response.setMessage("id City Tidak Ada!, Silahkan Coba Lagi yaa!");
+	// 	} else {
+	// 		response.setStatus(1);
+	// 		svc.update(dto);
+	// 		response.setMessage("Data berhasil ditambahkan!");
+	// 	}
+	// 	return response;
+	// }
 	
-	@ApiOperation(value = "Delete City Data")
-	@RequestMapping(value = "/delete/{id}", method = RequestMethod.DELETE)
-	public RestResponse deleteCustomer(@PathVariable("id") String id) {
-		RestResponse response = new RestResponse();
-		response.setStatus(1);
-		svc.delete(id);
-		response.setMessage("Data berhasil dihapus!");
-		return response;
-		// http://localhost:8081/bootcamp06/customer/delete/C009
-	}
+	// @ApiOperation(value = "Delete City Data")
+	// @RequestMapping(value = "/delete/{id}", method = RequestMethod.DELETE)
+	// public RestResponse deleteCustomer(@PathVariable("id") String id) {
+	// 	RestResponse response = new RestResponse();
+	// 	response.setStatus(1);
+	// 	svc.delete(id);
+	// 	response.setMessage("Data berhasil dihapus!");
+	// 	return response;
+	// 	// http://localhost:8081/bootcamp06/customer/delete/C009
+	// }
 	
 
 }
